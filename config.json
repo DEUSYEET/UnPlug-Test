@@ -1,0 +1,15 @@
+{
+    "menu": [
+        ["Home", "/"],
+        ["Post", "createTextPost"]
+
+    ],
+
+    "createPost": [
+        ["Image", "createImagePost"],
+        ["Text", "createTextPost"]
+    ]
+
+    
+
+}
