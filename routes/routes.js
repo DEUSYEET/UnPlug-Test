@@ -243,8 +243,8 @@ exports.uploadImage = (req, res) => {
     form.parse(req)
     //Upload File
     form.on('fileBegin', (name, file) => {
-        file.path = __dirname + '\\uploads\\' + file.name;
-        imagePath = __dirname + '\\uploads\\' + file.name;
+        file.path = __dirname + '/uploads/' + file.name;
+        imagePath = __dirname + '/uploads/' + file.name;
         // console.log(imagePath);
     });
     form.on('file', (name, file) => {
