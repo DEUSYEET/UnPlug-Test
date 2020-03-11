@@ -10,30 +10,30 @@ block content
                 br
                 label(for="lastName") Last Name:&nbsp;
                 br
-                input(type="text" name="lastName")
+                input(type="text" name="lastName" required)
                 br
                 label(for="username") Username:&nbsp;
                 br
-                input(type="text" name="username")
+                input(type="text" name="username" required)
                 br
                 label(for="password") Password:&nbsp;
                 br
                 input(type="password"
                 pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,16}$"
                 title="Must contain one number(0-9), one uppercase, one lowercase letter, a special character(!@#$%^&*), and a min length of 8 and max of 12."
-                name="password")
+                name="password" required)
                 br
                 label(for="email") Email:&nbsp;
                 br
-                input(type="email" name="email")
+                input(type="email" name="email" required)
                 br
-                label(for="location") Zip Code:&nbsp;
+                label(for="location" ) Zip Code:&nbsp;
                 br
-                input(type="text" name="location" pattern="^[0-9]{5}$" min="501" max="99950")
+                input(type="text" name="location" pattern="^[0-9]{5}$" min="501" max="99950" required)
                 br
                 label(for="DOB") Date Of Birth:&nbsp;
                 br
-                input(type="date" name="DOB")
+                input(type="date" name="DOB" required)
                 br
                 br
                 input(type="submit" class="btn")
