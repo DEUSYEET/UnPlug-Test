@@ -6,34 +6,34 @@ block content
             form(id="signUp" method="post" action="/signup")
                 label(for="firstName") First Name:&nbsp;
                 br
-                input(type="text" name="firstName" required)
+                input(type="text" required name="firstName")
                 br
                 label(for="lastName") Last Name:&nbsp;
                 br
-                input(type="text" name="lastName" required)
+                input(type="text" required name="lastName")
                 br
                 label(for="username") Username:&nbsp;
                 br
-                input(type="text" name="username" required)
+                input(type="text" required name="username")
                 br
                 label(for="password") Password:&nbsp;
                 br
                 input(type="password"
                 pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,16}$"
                 title="Must contain one number(0-9), one uppercase, one lowercase letter, a special character(!@#$%^&*), and a min length of 8 and max of 12."
-                name="password" required)
+                name="password")
                 br
                 label(for="email") Email:&nbsp;
                 br
-                input(type="email" name="email" required)
+                input(type="email" required name="email")
                 br
-                label(for="location" ) Zip Code:&nbsp;
+                label(for="location") Zip Code:&nbsp;
                 br
-                input(type="text" name="location" pattern="^[0-9]{5}$" min="501" max="99950" required)
+                input(type="text" required name="location" pattern="^[0-9]{5}$" min="501" max="99950")
                 br
                 label(for="DOB") Date Of Birth:&nbsp;
                 br
-                input(type="date" name="DOB" required)
+                input(type="date" required max="2007-12-31" min="1910-1-1" name="DOB")
                 br
                 br
                 input(type="submit" class="btn")
